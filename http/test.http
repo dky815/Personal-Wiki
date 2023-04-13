@@ -1,0 +1,34 @@
+GET http://localhost:8880/hello
+#Accept: application/json
+
+> {%
+// client.test("test-hello", function() {
+//   client.log("test /hello API");
+//   client.log(response.body);
+//   client.log(JSON.stringify(response.body)); // Although JSON is not suggested by IDEA, it can still be used.
+//   client.assert(response.status === 200, "The response code is not 200.");
+//   client.assert(response.body === "Hello World", "The result verification has failed.");
+// });
+%}
+###
+
+POST http://localhost:8880/hello/post
+Content-Type: application/x-www-form-urlencoded
+
+name=TEST
+
+###
+
+GET http://localhost:8880/test/list
+
+###
+
+GET http://localhost:8880/test/redis/set/123/test
+Accept: application/json
+
+###
+
+GET http://localhost:8880/redis/get/15271595887169536
+Accept: application/json
+
+###
