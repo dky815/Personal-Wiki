@@ -2,6 +2,8 @@
 
 🚀 This is a personal wiki web application that has been implemented using Java, Spring Boot, MyBatis, MySQL, Vue.js, and Ant Design Vue.
 
+Deployment on AWS EC2: http://wiki.kaiyu.live/
+
 ## Features
 
 - User authentication and authorization
